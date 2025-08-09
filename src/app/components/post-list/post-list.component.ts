@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import {PostService} from '../../services/post.service';
 import {NgForOf} from '@angular/common';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-post-list',
   imports: [
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './post-list.component.html',
   styleUrl: './post-list.component.scss'
